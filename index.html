@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title><h1 class="logo-text">Certified Otaku Challenge</h1>
+</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div id="start-screen">
+      <h1>Are You a True Otaku?</h1>
+      <button id="start-button">Take the Challenge</button>
+    </div>
+
+    <div id="difficulty-screen" class="hidden">
+      <h2>Select Difficulty</h2>
+      <button class="difficulty-btn" data-level="easy">Easy</button>
+      <button class="difficulty-btn" data-level="medium">Medium</button>
+      <button class="difficulty-btn" data-level="hard">Hard</button>
+    </div>
+
+    <div id="quiz-container" class="hidden">
+      <div id="score">Score: 0</div>
+      <div id="question"></div>
+      <div id="options"></div>
+      <button id="next-btn" class="hidden">Next</button>
+      <div id="result" class="hidden"></div>
+    </div>
+
+    <div id="final-screen" class="hidden">
+      <h2 id="final-message"></h2>
+      <button onclick="location.reload()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+body {
+  background: radial-gradient(circle at center, #1a1a2e, #0f0f1c);
+  color: #f5f5f5;
+  font-family: 'Orbitron', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #121212;
+  color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  color: #f5f5f5;
+}
+
+button {
+  background: #333;
+  color: #f5f5f5;
+  border: none;
+  padding: 15px 25px;
+  margin: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #444;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.option {
+  background: #2c2c2c;
+  border: 2px solid transparent;
+}
+
+.correct {
+  background-color: #0f0;
+  border-color: #0f0;
+  color: #000;
+  font-weight: bold;
+  animation: glowGreen 0.5s ease-in-out;
+}
+
+.wrong {
+  background-color: #f00;
+  border-color: #f00;
+  color: #fff;
+  font-weight: bold;
+  animation: glowRed 0.5s ease-in-out;
+}
+
+@keyframes glowGreen {
+  0% { box-shadow: 0 0 0px #0f0; }
+  100% { box-shadow: 0 0 15px #0f0; }
+}
+
+@keyframes glowRed {
+  0% { box-shadow: 0 0 0px #f00; }
+  100% { box-shadow: 0 0 15px #f00; }
+}
+
+#score {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #ffcc00;
+}
+
+#question {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.hidden {
+  display: none;
+}
+
+#final-message {
+  font-size: 1.4rem;
+  color: #00ffff;
+}
